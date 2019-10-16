@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Meine ASP.NET-Anwendung</title>
+    <title>@ViewBag.Title - LoaStaub Portfolio</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -24,7 +24,15 @@
                     <li>@Html.ActionLink("Startseite", "Index", "Home")</li>
                     <li>@Html.ActionLink("Info", "About", "Home")</li>
                     <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Fähigkeiten", "Skills","Home")</li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown">Skills
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://github.com/LoaStaub/XSS-Handler">C#</a></li>
+                            <li><a href="https://github.com/LoaStaub/Portfolio">Web Applikationen</a></li>
+                            <li><a href="https://github.com/LoaStaub/CsoundProjects">Lua</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -33,7 +41,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Meine ASP.NET-Anwendung</p>
+            <p>&copy; @DateTime.Now.Year - Meine Portfolio ASP.NET-Anwendung</p>
         </footer>
     </div>
 

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Resume";
+}
+
+@section scripts
+{
+    @Scripts.Render("~/CustomJs/Resume.js");
+}
+
+<h2>Resume</h2>
+
+<div class="row" id="registration">
+    <div class="col-lg-12">
+        <label for="pwd">Kennung:</label>
+        <input type="password" class="form-control" id="pwd"/>
+        <button class="btn btn-success" onclick="SendPassword()">Absenden</button>
+    </div>
+</div>
+
+<div id="repl"></div>
