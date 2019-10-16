@@ -20,6 +20,12 @@ namespace Portfolia.Controllers
             return View();
         }
 
+        public ActionResult Skills()
+        {
+
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
