@@ -12,5 +12,5 @@ function SendPassword() {
 }
 
 function DownloadFile(id) {
-    window.replace("~/Home/DownloadFile?id=" + id);
+    window.location.replace("/Home/DownloadFile?id=" + id);
 }

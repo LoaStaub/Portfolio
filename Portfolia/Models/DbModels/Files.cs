@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
-namespace Portfolia.Models.DbModels
+namespace Portfolia.Models
 {
-    public class Files
+    public partial class Files
     {
         [Key]
         public int Id { get; set; }
